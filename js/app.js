@@ -14,6 +14,4 @@ angular.module('AddressBook', [])
         $scope.order = function(colName) {
             $scope.sortCol = colName;
         };
-        $scope.phoneVisible = true;
-        $scope.emailVisible = true;
     });

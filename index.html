@@ -46,8 +46,8 @@
                             <h2 class="name">{{employee.firstName + " " + employee.lastName}}<!-- employee name goes here --> </h2>
                             <p class="title">{{employee.title}}</p> <!-- employee title goes here  </p>-->
                             <p class="department">{{employee.department}}</p> <!-- employee department goes here  </p>-->
-                            <p class="phone"><a ng-if="phoneVisible" ng-href="tel:">{{employee.phone}}</a></p> <!-- employee phone goes here (if present); hyperlink should dial number on mobile phone  </a></p>-->
-                            <p class="email"><a ng-if="emailVisible" ng-href="mailto:">{{employee.email}}</a></p> <!-- employee email goes here (if present); hyperlink should open a new email to email address  </a></p>-->
+                            <p class="phone"><a ng-if="employee.phone" ng-href="tel:">{{employee.phone}}</a></p> <!-- employee phone goes here (if present); hyperlink should dial number on mobile phone  </a></p>-->
+                            <p class="email"><a ng-if="employee.email" ng-href="mailto:">{{employee.email}}</a></p> <!-- employee email goes here (if present); hyperlink should open a new email to email address  </a></p>-->
                         <!--</div>-->
                     </li>
                 </ul>
