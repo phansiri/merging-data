@@ -45,8 +45,8 @@
                             <h2 class="name">{{employee.firstName + " " + employee.lastName}}</h2>
                             <p class="title">{{employee.title}}</p>
                             <p class="department">{{employee.department}}</p>
-                            <p class="phone"><a ng-if="employee.phone" ng-href="tel:">{{employee.phone}}</a></p>
-                            <p class="email"><a ng-if="employee.email" ng-href="mailto:">{{employee.email}}</a></p>
+                            <p class="phone"><a ng-if="employee.phone" ng-href="tel:{{employee.phone}}">{{employee.phone}}</a></p>
+                            <p class="email"><a ng-if="employee.email" ng-href="mailto:{{employee.email}}">{{employee.email}}</a></p>
                         </div>
                     </li>
                 </ul>
